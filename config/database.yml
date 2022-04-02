@@ -25,9 +25,9 @@ default: &default
 
 development:
   <<: *default
-  database: <%= Rails.application.credentials.DB_NAME.dev_db %>
-  username: <%= Rails.application.credentials.DB_USERNAME.dev_db %>
-  password: <%= Rails.application.credentials.DB_PASSWORD.dev_db %>
+  database: <%= Rails.application.credentials[:database][:name]%>
+  username: <%= Rails.application.credentials[:database][:username]%>
+  password: <%= Rails.application.credentials[:database][:password]%>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -61,9 +61,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= Rails.application.credentials.DB_NAME.test_db %>
-  username: <%= Rails.application.credentials.DB_USERNAME.test_db %>
-  password: <%= Rails.application.credentials.DB_PASSWORD.test_db %>
+  database: <%= Rails.application.credentials[:database][:name]%>
+  username: <%= Rails.application.credentials[:database][:username]%>
+  password: <%= Rails.application.credentials[:database][:password]%>
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -88,7 +88,6 @@ test:
 #
 production:
   <<: *default
-  database: <%= Rails.application.credentials.DB_NAME.prod_db %>
-  username: <%= Rails.application.credentials.DB_USERNAME.prod_db %>
-  password: <%= Rails.application.credentials.DB_PASSWORD.prod_db %>
-
+  database: <%= Rails.application.credentials[:database][:name]%>
+  username: <%= Rails.application.credentials[:database][:username]%>
+  password: <%= Rails.application.credentials[:database][:password]%>
