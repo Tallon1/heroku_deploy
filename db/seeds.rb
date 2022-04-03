@@ -9,6 +9,10 @@ dean = User.create(email: 'dean@example.com',
                    password: 'password',
                    password_confirmation: 'password',
                    role: 'admin')
+karl = User.create(email: 'karl@example.com',
+                   password: 'password',
+                   password_confirmation: 'password',
+                   role: 'admin')
 User.create(email: 'john@doe.com',
             password: 'password',
             password_confirmation: 'password')
