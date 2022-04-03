@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# Seeds admin users & normal users for demo
 dean = User.create(email: 'dean@example.com',
                    password: 'password',
                    password_confirmation: 'password',
@@ -19,5 +21,10 @@ User.create(email: 'john@doe.com',
 User.create(email: 'jane@doe.com',
             password: 'password',
             password_confirmation: 'password')
+
+# Seeds admin roles into pre-generated rooms for demo
 dean.joined_rooms << Room.create(name: 'General', is_private: false)
 dean.joined_rooms << Room.create(name: 'Testing', is_private: false)
+
+karl.joined_rooms << Room.create(name: 'General', is_private: false)
+karl.joined_rooms << Room.create(name: 'Testing', is_private: false)
