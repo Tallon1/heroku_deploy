@@ -39,7 +39,7 @@ body {
 #weather_container {
   float: right;
   width: 25%;
-  padding: 15px;
+  margin: auto;
 }
 
 #maps_container {
