@@ -37,12 +37,13 @@ body {
 }
 
 #weather_container {
-  margin: auto;
-  text-align: center;
-  width: 100%;
+  float: right;
+  width: 25%;
 }
 
 #maps_container {
+  width: 75%;
+  float: left;
   border: 1px solid rgb(52, 58, 64);
 }
 
