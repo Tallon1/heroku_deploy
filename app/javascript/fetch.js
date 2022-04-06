@@ -1,8 +1,11 @@
 class Fetch {
-    async getCurrent(input) {  
+    async getCurrent(input) {
+      const myKey = "018f010a6f5c869280fd4b4bc565bcd6";
+  
       //make request to url
+  
       const response = await fetch(
-        'http://api.weatherapi.com/v1/current.json?key=78ea0243f8594dc8ad0134113220604&q=Dublin&aqi=no'
+        `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${myKey}`
       );
   
       const data = await response.json();
