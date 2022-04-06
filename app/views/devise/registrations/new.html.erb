@@ -2,7 +2,7 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   
-  <!-- Avatar insert -->
+  <!-- Avatar insert image -->
   <div class="field">
     <%= f.label :avatar %>
     <%= f.file_field :avatar %>
@@ -14,8 +14,9 @@
   </div>
 
   <div class="field">
-    <button class="btn btn-primary" id="object">Generate</button>
-    <%= f.generate_field :object, autofocus: false %>
+    <%= f.label :generate %><br/>
+    <button class="btn btn-primary" id="generate">Submit</button>
+    <%= f.email_field :email, autofocus: false %>
   </div>
 
   <div class="field">
