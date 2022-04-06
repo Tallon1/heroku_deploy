@@ -15,11 +15,11 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
+  <br/>
+
   <div>
     <%= f.label :generate %><br/>
-    def
-      puts RandomPasswordGenerator.generate(10)
-    end
+    <%= puts RandomPasswordGenerator.generate(10) %>
   </div>
 
   <br/>
