@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  get 'generator/generate'
   get 'maps/map'
-  get 'weather/_weather'
   resources :rooms do
     resources :messages
     collection do
