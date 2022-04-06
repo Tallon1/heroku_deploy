@@ -14,8 +14,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :generate %><br/>
-    <button class="btn btn-primary" onclick="RandomPasswordGenerator.generate(10)">Need a Password? Generate it!</button>
+    <button class="btn btn-primary" id="generate">Generate</button>
     <%= f.generate_field :generate, autofocus: false %>
   </div>
 
