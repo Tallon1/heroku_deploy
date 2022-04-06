@@ -15,8 +15,8 @@
 
   <div class="field">
     <%= f.label :generate %><br/>
-    <button class="btn btn-primary" id="generate">Submit</button>
-    <%= f.email_field :email, autofocus: false %>
+    <button onclick="myFunction()">Generate</button>
+    <p id="generated"></p>
   </div>
 
   <div class="field">
@@ -33,5 +33,12 @@
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("generated").innerHTML = "Hello";
+    }
+  </script>
+
 <% end %>
 <%= render "devise/shared/links" %>
