@@ -38,6 +38,8 @@ body {
 
 #weather_container {
   margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
 #maps_container {
