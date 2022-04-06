@@ -5,11 +5,10 @@
 
 <p id="generated"></p>
 
+<%= @randoPassword =>
+
 <script>
     function genPassword() {
-        @randoPassword = RandomPasswordGenerator.generate(10);
-        document.getElementById("generated").innerHTML = randoPassword;
-        System.out.println = randoPassword;
-        <%= @randoPassword =>
+        document.getElementById("generated").innerHTML = @randoPassword;
     }
 </script>
