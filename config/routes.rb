@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'weather/_weather'
   resources :rooms do
     resources :messages
     collection do
