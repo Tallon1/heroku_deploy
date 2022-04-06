@@ -1,14 +1,7 @@
 <h1>Password Generator</h1>
-<p>Click the button to generate your random password</p>
+<p>Below is your randomly generated password!</p>
+<p>Please copy & paste it into</p>
 
-<button onclick="genPassword()">Generate Now!</button>
-
-<p id="generated"></p>
+<br />
 
 <%= @output %>
-
-<script>
-    function genPassword() {
-        document.getElementById("generated").innerHTML = @randoPassword;
-    }
-</script>
