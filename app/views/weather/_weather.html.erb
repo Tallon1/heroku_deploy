@@ -2,4 +2,9 @@
 <p>Find me in app/views/weather/_weather.html.erb</p>
 <br/>
 <%= @output %>
-<%= @output["temp_c"] %>
+<br/>
+<%= @output[1]["temp_c"] %>
+<br/>
+<%= @output[$current.temp_c] %>
+<br/>
+<%= @output[1][$current.temp_c] %>
