@@ -1,2 +1,12 @@
-<h1>Generator#generate</h1>
-<p>Find me in app/views/generator/generate.html.erb</p>
+<h1>Password Generator</h1>
+<p>Click the button to generate your random password</p>
+
+<button onclick="genPassword()">Generate Now!</button>
+
+<p id="generated"></p>
+
+<script>
+    function genPassword() {
+    document.getElementById("generated").innerHTML = "Hello World";
+    }
+</script>
