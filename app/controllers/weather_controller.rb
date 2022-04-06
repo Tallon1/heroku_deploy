@@ -9,6 +9,6 @@ class WeatherController < ApplicationController
     @uri = URI(@url)
     @response = Net::HTTP.get(@uri)
     @output = JSON.parse(@response)
-    
+
   end
 end
