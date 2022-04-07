@@ -111,6 +111,7 @@ GEM
       responders
       warden (~> 1.2.3)
     digest (3.1.0)
+    erratic_password_generator (1.0.2)
     erubi (1.10.0)
     ffi (1.15.5)
     ffi (1.15.5-x64-mingw32)
@@ -207,7 +208,6 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    random_password_generator (1.0.0)
     redis (4.5.1)
     regexp_parser (2.2.0)
     reline (0.3.1)
@@ -271,6 +271,7 @@ DEPENDENCIES
   capybara
   debug
   devise (~> 4.8)
+  erratic_password_generator (~> 1.0, >= 1.0.2)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
@@ -281,7 +282,6 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.1)
-  random_password_generator (~> 1.0)
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails

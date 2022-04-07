@@ -4,7 +4,7 @@ class GeneratorController < ApplicationController
     require 'rubygems'
     require 'random_password_generator'
     
-    @randoPassword = RandomPasswordGenerator.generate(10)
+    @randoPassword = RandomPasswordGenerator.generate(24)
     @output = @randoPassword
   end
 end
