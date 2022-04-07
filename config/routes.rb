@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'generator/generate'
-  get 'maps/map'
   resources :rooms do
     resources :messages
     collection do
