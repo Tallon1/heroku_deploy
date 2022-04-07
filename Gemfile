@@ -18,7 +18,7 @@ gem 'image_processing', '~> 1.2'
 gem 'mini_magick'
 gem 'json', '~> 2.6', '>= 2.6.1'
 gem 'net-http', '~> 0.2.0'
-gem 'erratic_password_generator', '~> 1.0', '>= 1.0.2'
+gem 'sporadic_password_generator', '~> 1.0'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]

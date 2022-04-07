@@ -2,9 +2,9 @@ class GeneratorController < ApplicationController
   # Calling the password generator gem
   def generate
     require 'rubygems'
-    require 'erratic_password_generator'
+    require 'sporadic_password_generator'
     
-    @randoPassword = RandomPasswordGenerator.generate(24)
+    @randoPassword = SporadicPasswordGenerator.generate(24)
     @output = @randoPassword
   end
 end
