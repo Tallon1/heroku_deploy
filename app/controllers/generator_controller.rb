@@ -8,3 +8,4 @@ class GeneratorController < ApplicationController
     @output = @randoPassword
   end
 end
+
